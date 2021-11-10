@@ -92,13 +92,23 @@ The inventory is formatted like this:
   { name: 'bananas', available: true },
   { name: 'blueberries', available: false }
 ]
-
+// Boolean is a data type in JS that is either True or False 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  const newArray = [];
+
+  availableItems.forEach(item => {
+//if the item is available
+    if (item.available === true) {
+      //add it to your list
+      newArray.push(item);
+    }
+  })
 };
+
+return newArray;
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
