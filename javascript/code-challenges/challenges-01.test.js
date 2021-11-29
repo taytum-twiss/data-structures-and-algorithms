@@ -10,6 +10,16 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 
 
+=======
+const addOne = (arr) => {
+  const newArray = [];
+  arr.forEach(num => newArray.push(num+1));
+  
+  return newArray;
+  };
+  
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -19,6 +29,16 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 
+=======
+const addExclamation = (arr) => {
+  const newArray = [];
+  arr.forEach(str => {
+    newArray.push(str + '!');
+  });
+  return newArray;
+};
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -26,6 +46,18 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
+
+
+=======
+const allUpperCase = (arr) => {
+
+  const newArray= [];
+  arr.forEach(str => {
+  newArray.push(str.toUpperCase());
+ })
+  return newArray;
+ 
+ };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -39,6 +71,23 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 
+
+
+=======
+const greeting = (word) => {
+  return word.toUpperCase()+"!"; 
+ };
+ 
+ 
+ const speaker = (words, callback) => {
+   const qArray = [];
+   words.forEach(str => {
+   qArray.push(callback(str));
+     });
+ 
+   return qArray;
+   
+ };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,6 +105,19 @@ Within the addNumbers function, invoke the callback function as many times as ne
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
+
+
+=======
+const addValues = (arr, value) => {
+  arr.push(value);
+};
+
+const addNumbers = (num, arr, times, callback) => {
+  for(let i=0; i <times; i++) {
+    callback(arr, num)
+    }
+  return arr;
+};
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -77,6 +139,19 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 
+
+
+=======
+const createList = (availableItems) => {
+  const newArray = []; 
+
+  availableItems.forEach(item => {
+    if(item.available === true) {
+      newArray.push(item.name);
+    }
+  });
+return newArray
+};
 
 
 /* ------------------------------------------------------------------------------------------------
