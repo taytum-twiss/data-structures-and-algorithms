@@ -8,13 +8,7 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-const addOne = (arr) => {
-  const newArray = [];
 
-  arr.forEach(num => newArray.push(num + 1));
-
-  return newArray;
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -24,13 +18,6 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-const addExclamation = (arr) => {
-  const localArray = [];
-  arr.forEach (str => {
-    localArray.push(str + '!');
-  });
-  return localArray;
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -40,13 +27,6 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
-const allUpperCase = (arr) => {
-  const myArray = [];
-  arr.forEach(str => {
-    myArray.push(str.toUpperCase());
-  })
-  return myArray;
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -58,13 +38,7 @@ Then, write a function named `speaker` that takes in an array of strings and a c
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
 ------------------------------------------------------------------------------------------------ */
 
-const greeting = (word) => {
- const wArray = [];
- word.forEach(str => {
-   wArray.push(str.toUpperCase + '!'());
- })
- return wArray;
-};
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -83,20 +57,6 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr, value) => {
-  value.push(arr);
-};
-
-const addNumbers = (num, arr, times, callback) => {
-  const theArray = [];
-  arr.forEach(num => theArray.push(num + 1));
-  for (let i=0; i<theArray.length; i++) {
-    function hold(callback) {
-      callback.addNumbers();
-    }
-  }
-  return theArray;
-};
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -116,19 +76,7 @@ The inventory is formatted like this:
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
-const createList = (availableItems) => {
-  const array (name: 'apples', available: true ), 
-  { name: 'pears', available: true },
-  { name: 'oranges', available: false },
-  { name: 'bananas', available: true },
-  { name: 'blueberries', available: false }
 
-
-  availableItems.forEach (array.length > i; array.push(i));
-
-  })
-  return availableItems
-};
 
 
 /* ------------------------------------------------------------------------------------------------
