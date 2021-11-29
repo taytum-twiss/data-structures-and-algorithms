@@ -8,6 +8,9 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
+
+
+=======
 const addOne = (arr) => {
   const newArray = [];
   arr.forEach(num => newArray.push(num+1));
@@ -15,6 +18,7 @@ const addOne = (arr) => {
   return newArray;
   };
   
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -24,6 +28,8 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
+
+=======
 const addExclamation = (arr) => {
   const newArray = [];
   arr.forEach(str => {
@@ -32,6 +38,7 @@ const addExclamation = (arr) => {
   return newArray;
 };
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -39,6 +46,9 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
+
+
+=======
 const allUpperCase = (arr) => {
 
   const newArray= [];
@@ -48,6 +58,7 @@ const allUpperCase = (arr) => {
   return newArray;
  
  };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -59,6 +70,10 @@ Then, write a function named `speaker` that takes in an array of strings and a c
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
 ------------------------------------------------------------------------------------------------ */
 
+
+
+
+=======
 const greeting = (word) => {
   return word.toUpperCase()+"!"; 
  };
@@ -73,6 +88,7 @@ const greeting = (word) => {
    return qArray;
    
  };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -90,6 +106,8 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
+
+=======
 const addValues = (arr, value) => {
   arr.push(value);
 };
@@ -100,6 +118,7 @@ const addNumbers = (num, arr, times, callback) => {
     }
   return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -115,10 +134,14 @@ The inventory is formatted like this:
   { name: 'bananas', available: true },
   { name: 'blueberries', available: false }
 ]
-
+// Boolean is a data type in JS that is either True or False 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
+
+
+
+=======
 const createList = (availableItems) => {
   const newArray = []; 
 
@@ -129,6 +152,7 @@ const createList = (availableItems) => {
   });
 return newArray
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
