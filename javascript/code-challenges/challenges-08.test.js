@@ -53,7 +53,8 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  // Solution code here...
+  let regex = /0-10/g;
+  return regex.test(charArray);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -106,7 +107,9 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  // Solution code here...
+  let pattern = /[A-Z][a-zA-Z]*/g;
+  let result = str.match(pattern);
+  return result || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -116,8 +119,10 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
-};
+  let pattern = /[A-J]/g;
+  let newArray = [];
+  pattern.push(newArray);
+  return newArray;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
